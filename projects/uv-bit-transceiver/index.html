@@ -3,20 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evan's Projects</title>
+    <title>UV Bit Transciever</title>
     <link rel="stylesheet" href="../../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
 </head>
 
-<body>
-    <nav class="main-nav" aria-label="Primary navigation">
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="../../projects/">Projects</a></li>
-            <li><a href="../../about/">About</a></li>
-            <li><a href="../../contact/">Contact</a></li>
-        </ul>
+<body class="projects-page">
+   <nav class="main-nav" aria-label="Primary navigation">
+        <div class="nav-container">
+            <a href="/" class="logo-link">
+                <img src="/images/EOC-projects-logo.png" alt="Evan Cortes Logo" class="logo">
+            </a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="../../projects/" class="active">Projects</a></li>
+                <li><a href="../../about/">About</a></li>
+                <li><a href="../../contact/">Contact</a></li>
+            </ul>
+        </div>
     </nav>
+    <div class="project-detail">
+        <div class="project-text">
+            <h1>UV Bit Transceiver</h1>
+            <span class="status-badge"> Finished <span class="status-year">2026</span></span>
+            <p> This project involved building a digital communication system 
+                using a microcontroller to transmit and receive binary data 
+                through a custom IR-based protocol. The system was designed to 
+                encode characters into binary sequences, transmit them using infrared light, 
+                and decode the received signals back into readable text. The code handles 
+                precise bit timing, start bit detection, and idle state management to ensure 
+                reliable data transmission. The system successfully demonstrated the ability to detect 
+                and transmit full strings of text such as 'Hello World', showcasing the 
+                core functionality of IR data transfer. This project demonstrates hands-on 
+                experience with embedded systems programming, hardware-software integration, and 
+                the development of low-level communication protocols.</p>
+        </div>
+        <img src="/images/bitSender.png" class="project-image">
+
+    </div>
+    <div class="project-tags">
+        <span class="tag">Python</span>
+        <span class="tag">Microcontroller</span>
+        <span class="tag">IR Protocol</span>
+    </div>
+
+    <div class="button-group">
+        <a class="github-btn" href="https://github.com/yourusername/your-repo" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i> View Code on GitHub
+        </a>
+    <a class="back-to-projects" href="../../projects/"> ← Back to Projects</a>
+    </div>
+    <footer class="site-footer">
+        <p>&copy; 2026 Evan Cortes. Built with code and coffee.</p>
+        <div class="social-links">
+            <a href="https://github.com/GeonNotTaken">GitHub</a>
+            <a href="https://www.linkedin.com/in/evan-cortes/">LinkedIn</a>
+        </div>
+    </footer>
 </body>

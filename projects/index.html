@@ -10,33 +10,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="projects-page">
     <nav class="main-nav" aria-label="Primary navigation">
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="../projects/">Projects</a></li>
-            <li><a href="../about/">About</a></li>
-            <li><a href="../contact/">Contact</a></li>
-        </ul>
+        <div class="nav-container">
+            <a href="/" class="logo-link">
+                <img src="/images/EOC-projects-logo.png" alt="Evan Cortes Logo" class="logo">
+            </a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="../../projects/" class="active">Projects</a></li>
+                <li><a href="../../about/">About</a></li>
+                <li><a href="../../contact/">Contact</a></li>
+            </ul>
+        </div>
     </nav>
     <section class="projects__section">
-        <h2 class="section__title">Projects</h2>
+        <h1 class="section__title">Projects</h1>
+        <p>A collection of my personal projects spanning a multitude of different skills 
+            and challenges I've tackled along the way. Each project varies in complexity 
+            and the effort required but is compiled here for reference and bookkeeping. 
+            Serving as both a portfolio of my work and a personal record of my progress.
+        </p>
         <div class="projects">
             <a href="/projects/uv-bit-transceiver/" style="display: block;">
-                <div class="projects__card" style="--card-bg: url('/images/bitSender.png'); --card-hover-bg: url('/gifs/bitSenderCompressed.gif');">     
+                <div class="projects__card" style="--card-bg: url('/images/bitSender.png'); --card-hover-bg: url('../gifs/bitSenderCompressed.gif');">     
                     <h3>UV Bit Transceiver</h3>
                     <div class="project__tags">
                         <span class="project__tag">Python</span>
-                        <span class="project__tag">Audio API</span>
+                        <span class="project__tag">MicroController</span>
                     </div>  
                 </div>
             </a>
-            <a href="/projects/uv-bit-transceiver/" style="display: block;">
-                <div class="projects__card" style="--card-bg: url('/images/musicTuner.png'); --card-hover-bg: url('/gifs/musicTunerCompressed.gif');">
+            <a href="/projects/pitch-cent-analyzer/" style="display: block;">
+                <div class="projects__card" style="--card-bg: url('/images/musicTuner.png'); --card-hover-bg: url('../gifs/musicTunerCompressed.gif');">
                     <h3>Pitch Cent Analyzer</h3>
+                        <div class="project__tags">
+                            <span class="project__tag">Python</span>
+                            <span class="project__tag">Audio API</span>
+                        </div>
                 </div>
             </a>
-            <div class="projects__card" style="--card-bg: url('/images/thirdProject.png'); --card-hover-bg: url('/gifs/thirdProjectCompressed.gif');">
+            <div class="projects__card" style="--card-bg: url('/images/thirdProject.png'); --card-hover-bg: url('../gifs/thirdProjectCompressed.gif');">
                 <h3>Your Third Project</h3>
             </div>
         </div>
@@ -46,7 +60,7 @@
         <img src="/gifs/musicTunerCompressed.gif" alt="">
     </div>
 
-        <footer class="site-footer">
+    <footer class="site-footer">
         <p>&copy; 2026 Evan Cortes. Built with code and coffee.</p>
         <div class="social-links">
             <a href="https://github.com/GeonNotTaken">GitHub</a>
