@@ -19,24 +19,38 @@
             <li><a href="../contact/">Contact</a></li>
         </ul>
     </nav>
-    <div class="projects">
-        <div class="projects__container">
-            <div class="projects__card__bitSender">
-                <h1>UV Bit Sender</h1>
-                <!-- <button>Get Started</button> -->
+    <section class="projects__section">
+        <h2 class="section__title">Projects</h2>
+        <div class="projects">
+            <a href="/projects/uv-bit-transceiver/" style="display: block;">
+                <div class="projects__card" style="--card-bg: url('/images/bitSender.png'); --card-hover-bg: url('/gifs/bitSenderCompressed.gif');">     
+                    <h3>UV Bit Transceiver</h3>
+                    <div class="project__tags">
+                        <span class="project__tag">Python</span>
+                        <span class="project__tag">Audio API</span>
+                    </div>  
+                </div>
+            </a>
+            <a href="/projects/uv-bit-transceiver/" style="display: block;">
+                <div class="projects__card" style="--card-bg: url('/images/musicTuner.png'); --card-hover-bg: url('/gifs/musicTunerCompressed.gif');">
+                    <h3>Pitch Cent Analyzer</h3>
+                </div>
+            </a>
+            <div class="projects__card" style="--card-bg: url('/images/thirdProject.png'); --card-hover-bg: url('/gifs/thirdProjectCompressed.gif');">
+                <h3>Your Third Project</h3>
             </div>
         </div>
-        <div class="projects__container">
-            <div class="projects__card__musicTuner">
-                <h1>Music Tuner</h1>
-                <!-- <button>Get Started</button> -->
-            </div>
-        </div>
-        <div class="projects__container">
-            <div class="projects__card__musicTuner">
-                <h1>Music Tuner</h1>
-                <!-- <button>Get Started</button> -->
-            </div>
-        </div>
+    </section>
+    <div style="display:none" aria-hidden="true">
+        <img src="/gifs/bitSenderCompressed.gif" alt="">
+        <img src="/gifs/musicTunerCompressed.gif" alt="">
     </div>
+
+        <footer class="site-footer">
+        <p>&copy; 2026 Evan Cortes. Built with code and coffee.</p>
+        <div class="social-links">
+            <a href="https://github.com/GeonNotTaken">GitHub</a>
+            <a href="https://www.linkedin.com/in/evan-cortes/">LinkedIn</a>
+        </div>
+    </footer>
 </body>

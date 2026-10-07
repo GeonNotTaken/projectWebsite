@@ -19,48 +19,34 @@
             <li><a href="/contact/">Contact</a></li>
         </ul>
     </nav>
-    <div class="projects">
-        <div class="projects__container">
-            <div class="projects__card__bitSender">
-                <h1>UV Bit Sender</h1>
-                <!-- <button>Get Started</button> -->
-            </div>
-        </div>
-        <div class="projects__container">
-            <div class="projects__card__musicTuner">
-                <h1>Music Tuner</h1>
-                <!-- <button>Get Started</button> -->
-            </div>
-        </div>
-        <div class="projects__container">
-            <div class="projects__card__musicTuner">
-                <h1>Music Tuner</h1>
-                <!-- <button>Get Started</button> -->
-            </div>
-        </div>
-    </div>
-    <div class="footer__link--wrapper">
-            <div class="footer__link--items">
-                <h2>About Us</h2>
-                <a href="/">How it works</a>
-                <a href="/">Testimonials</a>
-                <a href="/">Careers</a>
-                <a href="/">Investments</a>
-                <a href="/">Terms of Service</a>
-            </div>
-    </div>
-    <div class="social__media">
-            <div class="social__media--wrap">
-                <a href="/" id="footer__logo"><i class="fas faa-gem">NEXT</i></a>
-                <div class="website__right">© 2026 Evan Cortes. All rights reserved.</div>
-                <div class="social__icons">
-                    <a href="/" class="social__icon--link" target="_blank">
-                        <i class="fab fa-facebook">
-
-                        </i>
-                    </a>
+    <section class="projects__section">
+        <h2 class="section__title">Featured Projects</h2>
+        <div class="projects">
+            <a href="/projects/uv-bit-transceiver/" style="display: block;">
+                <div class="projects__card" style="--card-bg: url('/images/bitSender.png'); --card-hover-bg: url('/gifs/bitSenderCompressed.gif');">     
+                    <h3>UV Bit Transceiver</h3>
+                    <div class="project__tags">
+                        <span class="project__tag">Python</span>
+                        <span class="project__tag">Audio API</span>
+                    </div>  
                 </div>
+            </a>
+           <a href="/projects/uv-bit-transceiver/" style="display: block;">
+                <div class="projects__card" style="--card-bg: url('/images/musicTuner.png'); --card-hover-bg: url('/gifs/musicTunerCompressed.gif');">
+                    <h3>Pitch Cent Analyzer</h3>
+                </div>
+            </a>
+            <div class="projects__card" style="--card-bg: url('/images/thirdProject.png'); --card-hover-bg: url('/gifs/thirdProjectCompressed.gif');">
+                <h3>Your Third Project</h3>
             </div>
         </div>
+    </section>
 
+    <footer class="site-footer">
+        <p>&copy; 2026 Evan Cortes. Built with code and coffee.</p>
+        <div class="social-links">
+            <a href="https://github.com/GeonNotTaken">GitHub</a>
+            <a href="https://www.linkedin.com/in/evan-cortes/">LinkedIn</a>
+        </div>
+    </footer>
 </body>
