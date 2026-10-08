@@ -1,0 +1,9 @@
+packages:
+  - name: contact
+    actions:
+      - name: sendEmail
+        runtime: nodejs:18
+        web: true
+        environment:
+          EMAIL_USER: ${EMAIL_USER}
+          EMAIL_PASS: ${EMAIL_PASS}
