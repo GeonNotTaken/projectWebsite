@@ -328,6 +328,7 @@ body.projects-page {
   flex: 1;
   font-family: 'Kumbh Sans', sans-serif;
   margin-left: 10rem;
+  margin-bottom: 3rem;
   h1 {
     margin-top: 3rem;
     justify-content: center;
@@ -338,6 +339,14 @@ body.projects-page {
   }
 }
 
+.contact-cards {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap;       /* stacks them on smaller screens */
+    margin-top: 2rem;
+}
+
 .contact-card {
   background: #ffffff;
   border: 1px solid #e2e6ec;
@@ -345,7 +354,7 @@ body.projects-page {
   box-shadow: 0 2px 16px rgba(0,0,0,0.08);
   padding: 1.75rem;
   max-width: fit-content;
-  margin-top: 2rem;
+  align-items: center;
 }
 
 .contact-card-title {
@@ -392,6 +401,55 @@ body.projects-page {
   font-size: 0.78rem;
   color: #5c6170;
   margin-top: 1px;
+}
+
+.contact-form {
+  font-family: 'Inter', sans-serif;
+  h1 {
+    margin-bottom: 1rem;
+    margin-top: -.5rem;
+  }
+}
+
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form label {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #1a1d23;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 40rem;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #e2e6ec;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #1E2A38;
+    color: #fff;
+    border: none;
+    padding: 0.65rem 1.5rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #2e3d50;
+    transition: background-color 0.2s ease;
 }
 
 .contact-item:last-child { border-bottom: none; }
